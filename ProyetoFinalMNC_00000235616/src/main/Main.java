@@ -174,17 +174,17 @@ public class Main {
                     System.out.printf("\n");
 
                     switch (m) {
-                        case 1: // Regresion lineal simple
-                            System.out.println("-- AQUI VA EL METODO DE REGRESION LINEAL SIMPLE --");
+                        case 1: // Regla del rectangulo
+                            System.out.println("-- AQUI VA EL METODO DE REGLA DEL RECTANGULO --");
                             break;
-                        case 2: // Regresion polinomial
-                            System.out.println("-- AQUI VA EL METODO DE REGRESION POLINOMIAL --");
+                        case 2: // Regla del trapecio
+                            System.out.println("-- AQUI VA EL METODO DE REGLA DEL TRAPECIO --");
                             break;
-                        case 3: // Regresion polinomial cubica
-                            System.out.println("-- AQUI VA EL METODO DE REGRESION POLINOMIAL CUBICA --");
+                        case 3: // Simpson 1/3
+                            System.out.println("-- AQUI VA EL METODO DE SIMPSON 1/3 --");
                             break;
-                        case 4: // Regresion lineal multiple
-                            System.out.println("-- AQUI VA EL METODO DE REGRESION LINEAL MULTIPLE --");
+                        case 4: // Simpson 3/8
+                            System.out.println("-- AQUI VA EL METODO DE SIMPSON 3/8 --");
                             break;
                         default:
                             break;
