@@ -45,6 +45,10 @@ public class Main {
                     System.out.printf("4_Metodo de la secante\n");
                     System.out.printf("\nMetodo a escoger: \n");
                     m = key.nextInt();
+                    System.out.printf("\n");
+                    System.out.printf("--------------------------------------------------");
+                    System.out.printf("\n");
+
                     switch (m) {
                         case 1: // Metodo de bisecccion.
                             System.out.println("-- AQUI VA EL METODO DE BISECCION --");
@@ -68,19 +72,123 @@ public class Main {
                     break;
 
                 case 2: // SISTEMAS DE ECUACIONES
-                    System.out.println("-- (PROXIMAMENTE) AQUI VA EL MENU DE SISTEMAS DE ECUACIONES");
+                    System.out.printf("SISTEMAS DE ECUACIONES\n");
+                    System.out.printf("Para escoger un metodo, digite el numero de este\n");
+                    System.out.printf("1_Eliminacion de Gauss\n");
+                    System.out.printf("2_Gauss - Jordan\n");
+                    System.out.printf("3_Gauss - Seidel\n");
+                    System.out.printf("4_Matriz Inversa\n");
+                    System.out.printf("\nMetodo a escoger: \n");
+                    m = key.nextInt();
+                    System.out.printf("\n");
+                    System.out.printf("--------------------------------------------------");
+                    System.out.printf("\n");
+
+                    switch (m) {
+                        case 1: // Eliminacion de Gauss
+                            System.out.println("-- AQUI VA EL METODO DE ELIMINACION DE GAUSS --");
+                            break;
+                        case 2: // Gauss - Jordan
+                            System.out.println("-- AQUI VA EL METODO DE GAUSS - JORDAN --");
+                            break;
+                        case 3: // Gauss - Seidel
+                            System.out.println("-- AQUI VA EL METODO DE GAUSS - Seidel --");
+                            break;
+                        case 4: // Matriz Inversa
+                            System.out.println("-- AQUI VA EL METODO DE MATRIZ INVERSA --");
+                            break;
+                        default:
+                            break;
+                    }
                     break;
 
                 case 3: // REGRESION LINEAL
-                    System.out.println("-- (PROXIMAMENTE) AQUI VA EL MENU DE REGRESION LINEAL --");
+                    System.out.printf("REGRESION LINEAL\n");
+                    System.out.printf("Para escoger un metodo, digite el numero de este\n");
+                    System.out.printf("1_Regresion lineal simple\n");
+                    System.out.printf("2_Regresion polinomial\n");
+                    System.out.printf("3_Regresion polinomial cubica\n");
+                    System.out.printf("4_Regresion lineal multiple\n");
+                    System.out.printf("\nMetodo a escoger: \n");
+                    m = key.nextInt();
+                    System.out.printf("\n");
+                    System.out.printf("--------------------------------------------------");
+                    System.out.printf("\n");
+
+                    switch (m) {
+                        case 1: // Regresion lineal simple
+                            System.out.println("-- AQUI VA EL METODO DE REGRESION LINEAL SIMPLE --");
+                            break;
+                        case 2: // Regresion polinomial
+                            System.out.println("-- AQUI VA EL METODO DE REGRESION POLINOMIAL --");
+                            break;
+                        case 3: // Regresion polinomial cubica
+                            System.out.println("-- AQUI VA EL METODO DE REGRESION POLINOMIAL CUBICA --");
+                            break;
+                        case 4: // Regresion lineal multiple
+                            System.out.println("-- AQUI VA EL METODO DE REGRESION LINEAL MULTIPLE --");
+                            break;
+                        default:
+                            break;
+                    }
                     break;
 
                 case 4: // INTERPOLACION
-                    System.out.println("-- (PROXIMAMENTE) AQUI VA EL MENU DE INTERPOLACION --");
+                    System.out.printf("INTERPOLACION\n");
+                    System.out.printf("Para escoger un metodo, digite el numero de este\n");
+                    System.out.printf("1_Interpolacion lineal\n");
+                    System.out.printf("2_Interpolacion cuadratica\n");
+                    System.out.printf("3_Interpolacion polinomica\n");
+                    System.out.printf("\nMetodo a escoger: \n");
+                    m = key.nextInt();
+                    System.out.printf("\n");
+                    System.out.printf("--------------------------------------------------");
+                    System.out.printf("\n");
+
+                    switch (m) {
+                        case 1: // Interpolacion lineal
+                            System.out.println("-- AQUI VA EL METODO DE INTERPOLACION LINEAL --");
+                            break;
+                        case 2: // Interpolacion cuadratica
+                            System.out.println("-- AQUI VA EL METODO DE INTERPOLACION CUADRATICA--");
+                            break;
+                        case 3: // Interpolacion polinomica
+                            System.out.println("-- AQUI VA EL METODO DE INTERPOLACION POLINOMICA --");
+                            break;
+                        default:
+                            break;
+                    }
                     break;
 
                 case 5: // INTEGRACION
-                    System.out.println("-- (PROXIMAMENTE) AQUI VA EL MENU DE INTEGRACION --");
+                    System.out.printf("INTEGRACION\n");
+                    System.out.printf("Para escoger un metodo, digite el numero de este\n");
+                    System.out.printf("1_Regla del rectangulo\n");
+                    System.out.printf("2_Regla del trapecio\n");
+                    System.out.printf("3_Simpson 1/3\n");
+                    System.out.printf("4_Simpson 3/8\n");
+                    System.out.printf("\nMetodo a escoger: \n");
+                    m = key.nextInt();
+                    System.out.printf("\n");
+                    System.out.printf("--------------------------------------------------");
+                    System.out.printf("\n");
+
+                    switch (m) {
+                        case 1: // Regla del rectangulo
+                            System.out.println("-- AQUI VA EL METODO DE REGLA DEL RECTANGULO --");
+                            break;
+                        case 2: // Regla del trapecio
+                            System.out.println("-- AQUI VA EL METODO DE REGLA DEL TRAPECIO --");
+                            break;
+                        case 3: // Simpson 1/3
+                            System.out.println("-- AQUI VA EL METODO DE SIMPSON 1/3 --");
+                            break;
+                        case 4: // Simpson 3/8
+                            System.out.println("-- AQUI VA EL METODO DE SIMPSON 3/8 --");
+                            break;
+                        default:
+                            break;
+                    }
                     break;
 
             }
