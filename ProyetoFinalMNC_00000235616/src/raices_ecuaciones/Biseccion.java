@@ -36,14 +36,14 @@ public class Biseccion {
         while ((b - a) / 2.0 > tolerancia) {
             c = (a + b) / 2.0; // Punto medio
             if (f(c) == 0.0) {
-                break; // Encontramos la raíz exacta
+                break; // Encontramos la raiz exacta
             } else if (f(a) * f(c) < 0) {
-                b = c; // La raíz está en [a, c]
+                b = c; // La raiz esta en [a, c]
             } else {
-                a = c; // La raíz está en [c, b]
+                a = c; // La raiz esta en [c, b]
             }
         }
-        return Math.abs(c); // Devuelve la raíz aproximada
+        return Math.abs(c); // Devuelve la raiz aproximada
     }
 
 }

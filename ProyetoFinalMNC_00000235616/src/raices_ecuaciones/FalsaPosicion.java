@@ -45,16 +45,16 @@ public class FalsaPosicion {
             if (f(c) == 0.0) {
                 break; // Encontramos la raíz exacta
             } else if (f(a) * f(c) < 0) {
-                b = c; // La raíz está en [a, c]
+                b = c; // La raiz este en [a, c]
             } else {
-                a = c; // La raíz está en [c, b]
+                a = c; // La raiz este en [c, b]
             }
 
             // Calcular el error relativo
             error = Math.abs((c - cAnterior) / c) * 100.0;
         }
 
-        return Math.abs(c); // Devuelve la raíz aproximada
+        return Math.abs(c); // Devuelve la raiz aproximada
 
     }
 
