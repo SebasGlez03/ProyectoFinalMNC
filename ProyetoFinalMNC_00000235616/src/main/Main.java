@@ -5,6 +5,8 @@
 package main;
 
 import java.util.Scanner;
+import raices_ecuaciones.FachadaRaices;
+import raices_ecuaciones.IRaices;
 
 /**
  *
@@ -13,6 +15,7 @@ import java.util.Scanner;
 public class Main {
 
     static Scanner key = new Scanner(System.in);
+    static IRaices raices = new FachadaRaices();
 
     public static void main(String[] args) {
 
@@ -50,12 +53,16 @@ public class Main {
                     System.out.printf("\n");
 
                     switch (m) {
-                        case 1: // Metodo de bisecccion.
-                            System.out.println("-- AQUI VA EL METODO DE BISECCION --");
+                        case 1: // Metodo de bisecccion.                       
+                            System.out.printf("\n\nUtilizando el metodo de la biseccion con la funcion f(x) = (x^10) - 1,\n");
+                            System.out.println("y utilizando el intervalo de [0, 1].");
+                            System.out.println("\nSe encontro que la raiz aproximada es: " + raices.biseccion());
                             break;
 
                         case 2: // Metodo de falsa posicion
-                            System.out.println("-- AQUI VA EL METODO DE FALSA POSICION --");
+                            System.out.printf("\n\nUtilizando el metodo de la falsa posicion con la funcion f(x) = x^3 -10x -5,\n");
+                            System.out.println("y utilizando el intervalo de [0, 1].");
+                            System.out.println("\nSe encontro que la raiz aproximada es: " + raices.falsaPosicion());
                             break;
 
                         case 3: // Metodo de Newton - Raphson
