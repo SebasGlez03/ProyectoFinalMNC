@@ -18,6 +18,8 @@ public class Pruebas {
 
         System.out.println("Biseccion: " + raices.biseccion());
         System.out.println("Falsa posicion: " + raices.falsaPosicion());
+        System.out.println("Newton Raphson: " + raices.newtonRaphson());
+        System.out.println("Secante: " + raices.secante());
     }
 
 }

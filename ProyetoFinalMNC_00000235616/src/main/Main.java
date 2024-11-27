@@ -66,11 +66,15 @@ public class Main {
                             break;
 
                         case 3: // Metodo de Newton - Raphson
-                            System.out.println("-- AQUI VA EL METODO DE NEWTON - RAPHSON --");
+                            System.out.printf("\n\nUtilizando el metodo de Newton Raphson con la funcion f(x) = ln(x^2 +1) - e^x/2 * cos(pi * x),\n");
+                            System.out.println("y utilizando el valor inicial de 0.7");
+                            System.out.println("\nSe encontro que la raiz aproximada es: " + raices.newtonRaphson());
                             break;
 
                         case 4: // Metodo de la secante
-                            System.out.println("-- AQUI VA EL METODO DE LA SECANTE --");
+                            System.out.printf("\n\nUtilizando el metodo de la secante con la funcion f(x) = x^3 - 6x^2 +11x -6.1,\n");
+                            System.out.println("y utilizando el intervalo de [0, 2].");
+                            System.out.println("\nSe encontro que la raiz aproximada es: " + raices.secante());
                             break;
 
                         default:

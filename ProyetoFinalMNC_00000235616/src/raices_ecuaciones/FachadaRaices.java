@@ -14,6 +14,8 @@ public class FachadaRaices implements IRaices {
 
     Biseccion b = new Biseccion();
     FalsaPosicion fp = new FalsaPosicion();
+    NewtonRaphson nr = new NewtonRaphson();
+    Secante s = new Secante();
 
     /**
      * Metodo que obteiene el valor de la biseccion
@@ -42,7 +44,7 @@ public class FachadaRaices implements IRaices {
      */
     @Override
     public double newtonRaphson() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return nr.newtonRaphson();
     }
 
     /**
@@ -52,7 +54,7 @@ public class FachadaRaices implements IRaices {
      */
     @Override
     public double secante() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return s.secante();
     }
 
 }

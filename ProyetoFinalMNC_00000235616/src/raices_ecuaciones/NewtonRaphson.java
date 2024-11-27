@@ -34,6 +34,12 @@ public class NewtonRaphson {
         return term1 - term2;
     }
 
+    /**
+     * Metodo que realiza el Newton Raphson de la funcion establecida por el
+     * profesor
+     *
+     * @return La raiz aproximada obtenida del metodo Newton Raphson
+     */
     public double newtonRaphson() {
         double x0 = 0.7; // Valor inicial
         double tolerancia = 0.001; // Eror estimado deseado (0.1%)
@@ -49,7 +55,7 @@ public class NewtonRaphson {
             x0 = x1; // Actualizacion de x0 para la siguiente iteracion
         }
 
-        return x0; // Devuelve la raiz aproximada
+        return Math.abs(x0); // Devuelve la raiz aproximada
     }
 
 }
