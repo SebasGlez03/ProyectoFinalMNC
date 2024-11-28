@@ -23,7 +23,7 @@ public class Prueba {
         System.out.println("-------------------------------------");
         s.gaussSeidel();
         System.out.println("-------------------------------------");
-//        s.matrizInversa();
+        s.matrizInversa();
 
     }
 

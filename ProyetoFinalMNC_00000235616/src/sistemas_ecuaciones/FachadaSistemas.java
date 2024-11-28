@@ -13,6 +13,7 @@ public class FachadaSistemas implements ISistemas {
     EliminacionGauss eg = new EliminacionGauss();
     GaussJordan gj = new GaussJordan();
     GaussSeidel gs = new GaussSeidel();
+    MatrizInversa mi = new MatrizInversa();
 
     /**
      * Metodo que obtiene el valor de la eliminacion de Gauss
@@ -43,7 +44,7 @@ public class FachadaSistemas implements ISistemas {
      */
     @Override
     public void matrizInversa() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        mi.matrizInversa();
     }
 
 }

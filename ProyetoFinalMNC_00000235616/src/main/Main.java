@@ -7,6 +7,8 @@ package main;
 import java.util.Scanner;
 import raices_ecuaciones.FachadaRaices;
 import raices_ecuaciones.IRaices;
+import sistemas_ecuaciones.FachadaSistemas;
+import sistemas_ecuaciones.ISistemas;
 
 /**
  *
@@ -16,6 +18,7 @@ public class Main {
 
     static Scanner key = new Scanner(System.in);
     static IRaices raices = new FachadaRaices();
+    static ISistemas sistemas = new FachadaSistemas();
 
     public static void main(String[] args) {
 
@@ -97,16 +100,48 @@ public class Main {
 
                     switch (m) {
                         case 1: // Eliminacion de Gauss
-                            System.out.println("-- AQUI VA EL METODO DE ELIMINACION DE GAUSS --");
+                            System.out.printf("\n\nUtilizando el metodo de eliminacion de Gauss con la matriz:\n");
+                            System.out.println("""
+                                               | x  - 2y + 2z - 3w | = 15
+                                               | 3x + 4y -  z +  w | = -6
+                                               | 2x - 3y + 2z -  w | - 17
+                                               | x  +  y - 3z - 2w | = -7
+                                               """);
+                            System.out.printf("\nSe encontraron los siguientes valores de x1, x2, x3 y x4: \n\n");
+                            sistemas.eliminacionGauss();
                             break;
                         case 2: // Gauss - Jordan
-                            System.out.println("-- AQUI VA EL METODO DE GAUSS - JORDAN --");
+                            System.out.printf("\n\nUtilizando el metodo de Gauss - Jordan con la matriz:\n");
+                            System.out.println("""
+                                               | x  - 2y + 2z - 3w | = 15
+                                               | 3x + 4y -  z +  w | = -6
+                                               | 2x - 3y + 2z -  w | - 17
+                                               | x  +  y - 3z - 2w | = -7
+                                               """);
+                            System.out.printf("\nSe encontraron los siguientes valores de x1, x2, x3 y x4: \n\n");
+                            sistemas.gaussJordan();
                             break;
                         case 3: // Gauss - Seidel
-                            System.out.println("-- AQUI VA EL METODO DE GAUSS - Seidel --");
+                            System.out.printf("\n\nUtilizando el metodo de Gauss - Seidel con la matriz:\n");
+                            System.out.println("""
+                                               | x  - 2y + 2z - 3w | = 15
+                                               | 3x + 4y -  z +  w | = -6
+                                               | 2x - 3y + 2z -  w | - 17
+                                               | x  +  y - 3z - 2w | = -7
+                                               """);
+                            System.out.printf("\nSe encontraron los siguientes valores de x1, x2, x3 y x4: \n\n");
+                            sistemas.gaussSeidel();
                             break;
                         case 4: // Matriz Inversa
-                            System.out.println("-- AQUI VA EL METODO DE MATRIZ INVERSA --");
+                            System.out.printf("\n\nUtilizando el metodo de la Matriz Inversa con la matriz:\n");
+                            System.out.println("""
+                                               | x  - 2y + 2z - 3w | = 15
+                                               | 3x + 4y -  z +  w | = -6
+                                               | 2x - 3y + 2z -  w | - 17
+                                               | x  +  y - 3z - 2w | = -7
+                                               """);
+                            System.out.printf("\nSe encontraron los siguientes valores de x1, x2, x3 y x4: \n\n");
+                            sistemas.matrizInversa();
                             break;
                         default:
                             break;

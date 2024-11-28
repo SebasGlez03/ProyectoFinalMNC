@@ -10,16 +10,39 @@ package sistemas_ecuaciones;
  */
 public class GaussSeidel {
 
+    /**
+     * Metodo que realiza la operacion Gauss - Seidel, utilizando la matriz
+     * proporcionada por el profesor y mostrando al final las iteraciones
+     * realizadas con su error y el resultado de x1, x2, x3 y x4
+     */
     public void gaussSeidel() {
-        // La matriz se reordena para hacerla diagonalmente dominante
         double[][] matriz = {
+            {1, -2, 2, -3, 15},
             {3, 4, -1, 1, -6},
             {2, -3, 2, -1, 17},
-            {1, -2, 2, -3, 15},
             {1, 1, -3, -2, -7}
         };
 
         int n = matriz.length;
+
+        // Reordenamos la matriz para hacerla diagonalmente dominante (si es posible)
+        for (int i = 0; i < n; i++) {
+            double max = Math.abs(matriz[i][i]);
+            int maxRow = i;
+            // Encontrar la fila con el mayor valor en la diagonal
+            for (int j = i + 1; j < n; j++) {
+                if (Math.abs(matriz[j][i]) > max) {
+                    max = Math.abs(matriz[j][i]);
+                    maxRow = j;
+                }
+            }
+            // Intercambiar filas si es necesario
+            if (maxRow != i) {
+                double[] temp = matriz[i];
+                matriz[i] = matriz[maxRow];
+                matriz[maxRow] = temp;
+            }
+        }
 
         // Valores iniciales para las variables
         double[] x = new double[n];
@@ -31,7 +54,7 @@ public class GaussSeidel {
 
         // Iteraciones
         int iteraciones = 0;
-        System.out.println("Iteración\tError");
+        System.out.println("Iteracion\tError");
         while (error > tolerancia) {
             error = 0;
             for (int i = 0; i < n; i++) {
@@ -51,14 +74,17 @@ public class GaussSeidel {
             }
             iteraciones++;
             System.out.printf("  %d\t\t%.6f\n", iteraciones, error);
+
+            // Agregar un limite maximo de iteraciones para evitar un ciclo infinito
+            if (iteraciones > 1000) {
+                System.out.println("Se alcanzó el límite máximo de iteraciones.");
+                break;
+            }
         }
 
         // Mostrar soluciones
         System.out.println("\nSoluciones:");
         for (int i = 0; i < n; i++) {
-            if (i > 50) {
-                break;
-            }
             System.out.printf("x%d = %.6f\n", i + 1, x[i]);
         }
     }
