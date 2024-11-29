@@ -4,6 +4,8 @@
  */
 package main;
 
+import interpolacion.FachadaInterpolacion;
+import interpolacion.IInterpolacion;
 import java.util.Scanner;
 import raices_ecuaciones.FachadaRaices;
 import raices_ecuaciones.IRaices;
@@ -22,6 +24,7 @@ public class Main {
     static IRaices raices = new FachadaRaices();
     static ISistemas sistemas = new FachadaSistemas();
     static IRegresion regresion = new FachadaRegresion();
+    static IInterpolacion interpolacion = new FachadaInterpolacion();
 
     public static void main(String[] args) {
 
@@ -254,13 +257,67 @@ public class Main {
 
                     switch (m) {
                         case 1: // Interpolacion lineal
-                            System.out.println("-- AQUI VA EL METODO DE INTERPOLACION LINEAL --");
+                            System.out.printf("\n\nUtilizando el metodo de la interpolacion lineal con la siguiente informacion:\n");
+                            System.out.println("""
+                                               +------------------+---------------------+------------------+
+                                               |   Diametro del   |   Longitud del      |  Peso por metro  |
+                                               |   alambre (mm)   |   kilogramo (m/kg)  |  lineal (g/m)    |
+                                               +------------------+---------------------+------------------+
+                                               |       0.50       |        649.35       |       1.540      |
+                                               |       0.55       |        536.65       |       1.863      |
+                                               |       0.60       |        450.94       |       2.218      |
+                                               |       0.65       |        384.23       |       2.603      |
+                                               |       0.70       |        331.30       |       3.018      |
+                                               |       0.75       |        288.60       |       3.465      |
+                                               |       0.80       |        253.65       |       3.942      |
+                                               +------------------+---------------------+------------------+
+                                               """);
+                            System.out.println("Se pidio lo siguiente:");
+                            System.out.println("Obtener el peso por metro lineal en la longitud del kilogramo en 580");
+                            System.out.println("\nY se obtubo el siguiente resultado:");
+                            interpolacion.lineal();
                             break;
                         case 2: // Interpolacion cuadratica
-                            System.out.println("-- AQUI VA EL METODO DE INTERPOLACION CUADRATICA--");
+                            System.out.printf("\n\nUtilizando el metodo de la interpolacion cuadratica con la siguiente informacion:\n");
+                            System.out.println("""
+                                               +------------------+---------------------+------------------+
+                                               |   Diametro del   |   Longitud del      |  Peso por metro  |
+                                               |   alambre (mm)   |   kilogramo (m/kg)  |  lineal (g/m)    |
+                                               +------------------+---------------------+------------------+
+                                               |       0.50       |        649.35       |       1.540      |
+                                               |       0.55       |        536.65       |       1.863      |
+                                               |       0.60       |        450.94       |       2.218      |
+                                               |       0.65       |        384.23       |       2.603      |
+                                               |       0.70       |        331.30       |       3.018      |
+                                               |       0.75       |        288.60       |       3.465      |
+                                               |       0.80       |        253.65       |       3.942      |
+                                               +------------------+---------------------+------------------+
+                                               """);
+                            System.out.println("Se pidio lo siguiente:");
+                            System.out.println("Obtener el peso por metro lineal a un diametro de 0.63");
+                            System.out.println("\nY se obtubo el siguiente resultado:");
+                            interpolacion.cuadratica();
                             break;
                         case 3: // Interpolacion polinomica
-                            System.out.println("-- AQUI VA EL METODO DE INTERPOLACION POLINOMICA --");
+                            System.out.printf("\n\nUtilizando el metodo de la interpolacion polinomica con la siguiente informacion:\n");
+                            System.out.println("""
+                                               +------------------+---------------------+------------------+
+                                               |   Diametro del   |   Longitud del      |  Peso por metro  |
+                                               |   alambre (mm)   |   kilogramo (m/kg)  |  lineal (g/m)    |
+                                               +------------------+---------------------+------------------+
+                                               |       0.50       |        649.35       |       1.540      |
+                                               |       0.55       |        536.65       |       1.863      |
+                                               |       0.60       |        450.94       |       2.218      |
+                                               |       0.65       |        384.23       |       2.603      |
+                                               |       0.70       |        331.30       |       3.018      |
+                                               |       0.75       |        288.60       |       3.465      |
+                                               |       0.80       |        253.65       |       3.942      |
+                                               +------------------+---------------------+------------------+
+                                               """);
+                            System.out.println("Se pidio lo siguiente:");
+                            System.out.println("Obtener la longitud del kilometro a un peso por metro lineal (g/m) de 2.901");
+                            System.out.println("\nY se obtubo el siguiente resultado:");
+                            interpolacion.polinomica();
                             break;
                         default:
                             break;

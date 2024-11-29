@@ -8,6 +8,6 @@ package integracion;
  *
  * @author PC
  */
-public class MetodosIntegracion {
+public class Trapecio {
     
 }

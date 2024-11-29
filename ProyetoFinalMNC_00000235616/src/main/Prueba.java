@@ -4,6 +4,10 @@
  */
 package main;
 
+import integracion.FachadaIntegracion;
+import integracion.IIntegracion;
+import interpolacion.FachadaInterpolacion;
+import interpolacion.IInterpolacion;
 import regresion.FachadaRegresion;
 import regresion.IRegresion;
 
@@ -15,15 +19,15 @@ public class Prueba {
 
     public static void main(String[] args) {
 
-        IRegresion r = new FachadaRegresion();
+        IIntegracion i = new FachadaIntegracion();
 
-        r.linealSimple();
+        i.reglaRectangulo();
         System.out.println("-------------------------------------");
-        r.polinomial();
+//        i.reglaTrapecio();
         System.out.println("-------------------------------------");
-        r.polinomialCubica();
+//        i.simpsonUnTercio();
         System.out.println("-------------------------------------");
-        r.linealMultiple();
+//        i.simpsonTresOctavos();
 
     }
 
