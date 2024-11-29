@@ -17,18 +17,18 @@ import regresion.IRegresion;
  */
 public class Prueba {
 
-//    public static void main(String[] args) {
-//
-//        IIntegracion i = new FachadaIntegracion();
-//
-//        i.reglaRectangulo();
-//        System.out.println("-------------------------------------");
-//        i.reglaTrapecio();
-//        System.out.println("-------------------------------------");
-////        i.simpsonUnTercio();
-//        System.out.println("-------------------------------------");
-////        i.simpsonTresOctavos();
-//
-//    }
+    public static void main(String[] args) {
+
+        IIntegracion i = new FachadaIntegracion();
+
+        i.reglaRectangulo();
+        System.out.println("-------------------------------------");
+        i.reglaTrapecio();
+        System.out.println("-------------------------------------");
+        i.simpsonUnTercio();
+        System.out.println("-------------------------------------");
+//        i.simpsonTresOctavos();
+
+    }
 
 }
