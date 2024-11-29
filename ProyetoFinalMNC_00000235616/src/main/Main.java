@@ -107,45 +107,37 @@ public class Main {
                     switch (m) {
                         case 1: // Eliminacion de Gauss
                             System.out.printf("\n\nUtilizando el metodo de eliminacion de Gauss con la matriz:\n");
-                            System.out.println("""
-                                               | x  - 2y + 2z - 3w | = 15
-                                               | 3x + 4y -  z +  w | = -6
-                                               | 2x - 3y + 2z -  w | - 17
-                                               | x  +  y - 3z - 2w | = -7
-                                               """);
+                            System.out.println("| x  - 2y + 2z - 3w | = 15");
+                            System.out.println("| 3x + 4y -  z +  w | = -6");
+                            System.out.println("| 2x - 3y + 2z -  w | - 17");
+                            System.out.println("| x  +  y - 3z - 2w | = -7");
                             System.out.printf("\nSe encontraron los siguientes valores de x1, x2, x3 y x4: \n\n");
                             sistemas.eliminacionGauss();
                             break;
                         case 2: // Gauss - Jordan
                             System.out.printf("\n\nUtilizando el metodo de Gauss - Jordan con la matriz:\n");
-                            System.out.println("""
-                                               | x  - 2y + 2z - 3w | = 15
-                                               | 3x + 4y -  z +  w | = -6
-                                               | 2x - 3y + 2z -  w | - 17
-                                               | x  +  y - 3z - 2w | = -7
-                                               """);
+                            System.out.println("| x  - 2y + 2z - 3w | = 15");
+                            System.out.println("| 3x + 4y -  z +  w | = -6");
+                            System.out.println("| 2x - 3y + 2z -  w | - 17");
+                            System.out.println("| x  +  y - 3z - 2w | = -7");
                             System.out.printf("\nSe encontraron los siguientes valores de x1, x2, x3 y x4: \n\n");
                             sistemas.gaussJordan();
                             break;
                         case 3: // Gauss - Seidel
                             System.out.printf("\n\nUtilizando el metodo de Gauss - Seidel con la matriz:\n");
-                            System.out.println("""
-                                               | x  - 2y + 2z - 3w | = 15
-                                               | 3x + 4y -  z +  w | = -6
-                                               | 2x - 3y + 2z -  w | - 17
-                                               | x  +  y - 3z - 2w | = -7
-                                               """);
+                            System.out.println("| x  - 2y + 2z - 3w | = 15");
+                            System.out.println("| 3x + 4y -  z +  w | = -6");
+                            System.out.println("| 2x - 3y + 2z -  w | - 17");
+                            System.out.println("| x  +  y - 3z - 2w | = -7");
                             System.out.printf("\nSe encontraron los siguientes valores de x1, x2, x3 y x4: \n\n");
                             sistemas.gaussSeidel();
                             break;
                         case 4: // Matriz Inversa
                             System.out.printf("\n\nUtilizando el metodo de la Matriz Inversa con la matriz:\n");
-                            System.out.println("""
-                                               | x  - 2y + 2z - 3w | = 15
-                                               | 3x + 4y -  z +  w | = -6
-                                               | 2x - 3y + 2z -  w | - 17
-                                               | x  +  y - 3z - 2w | = -7
-                                               """);
+                            System.out.println("| x  - 2y + 2z - 3w | = 15");
+                            System.out.println("| 3x + 4y -  z +  w | = -6");
+                            System.out.println("| 2x - 3y + 2z -  w | - 17");
+                            System.out.println("| x  +  y - 3z - 2w | = -7");
                             System.out.printf("\nSe encontraron los siguientes valores de x1, x2, x3 y x4: \n\n");
                             sistemas.matrizInversa();
                             break;
@@ -170,71 +162,63 @@ public class Main {
                     switch (m) {
                         case 1: // Regresion lineal simple
                             System.out.printf("\n\nUtilizando el metodo de la regresion lineal simple con los puntos:\n");
-                            System.out.println("""
-                                               +--------+--------+
-                                               |   Xi   |   Yi   |
-                                               +--------+--------+
-                                               |  8.00  |  6.47  |
-                                               |  4.00  |  6.24  |
-                                               | -4.00  |  5.72  |
-                                               | -12.00 |  5.09  |
-                                               | -20.00 |  4.30  |
-                                               | -28.00 |  4.33  |
-                                               +--------+--------+
-                                               """);
+                            System.out.println("+--------+--------+");
+                            System.out.println("|   Xi   |   Yi   |");
+                            System.out.println("+--------+--------+");
+                            System.out.println("|  8.00  |  6.47  |");
+                            System.out.println("|  4.00  |  6.24  |");
+                            System.out.println("| -4.00  |  5.72  |");
+                            System.out.println("| -12.00 |  5.09  |");
+                            System.out.println("| -20.00 |  4.30  |");
+                            System.out.println("| -28.00 |  4.33  |");
+                            System.out.println("+--------+--------+");
                             System.out.println("Se encontro la siguiente ecuacion de la recta y las siguientes predicciones:");
                             regresion.linealSimple();
                             break;
                         case 2: // Regresion polinomial
                             System.out.printf("\n\nUtilizando el metodo de la regresion polinomial con los puntos:\n");
-                            System.out.println("""
-                                               +--------+--------+
-                                               |   Xi   |   Yi   |
-                                               +--------+--------+
-                                               |   1    |   0.5  |
-                                               |   2    |   2.5  |
-                                               |   3    |    2   |
-                                               |   4    |    4   |
-                                               |   5    |  3.50  |
-                                               |   6    |    6   |
-                                               |   7    |   5.5  |
-                                               +--------+--------+
-                                               """);
+                            System.out.println("+--------+--------+");
+                            System.out.println("|   Xi   |   Yi   |");
+                            System.out.println("+--------+--------+");
+                            System.out.println("|   1    |   0.5  |");
+                            System.out.println("|   2    |   2.5  |");
+                            System.out.println("|   3    |    2   |");
+                            System.out.println("|   4    |    4   |");
+                            System.out.println("|   5    |  3.50  |");
+                            System.out.println("|   6    |    6   |");
+                            System.out.println("|   7    |   5.5  |");
+                            System.out.println("+--------+--------+");
                             System.out.println("Se encontraro el siguiente polinomio y las siguientes predicciones:");
                             regresion.polinomial();
                             break;
                         case 3: // Regresion polinomial cubica
                             System.out.printf("\n\nUtilizando el metodo de la regresion polinomial cubica con los puntos:\n");
-                            System.out.println("""
-                                               +--------+--------+
-                                               |   Xi   |   Yi   |
-                                               +--------+--------+
-                                               |   1    |   0.5  |
-                                               |   2    |   2.5  |
-                                               |   3    |    2   |
-                                               |   4    |    4   |
-                                               |   5    |  3.50  |
-                                               |   6    |    6   |
-                                               |   7    |   5.5  |
-                                               +--------+--------+
-                                               """);
+                            System.out.println("+--------+--------+");
+                            System.out.println("|   Xi   |   Yi   |");
+                            System.out.println("+--------+--------+");
+                            System.out.println("|   1    |   0.5  |");
+                            System.out.println("|   2    |   2.5  |");
+                            System.out.println("|   3    |    2   |");
+                            System.out.println("|   4    |    4   |");
+                            System.out.println("|   5    |  3.50  |");
+                            System.out.println("|   6    |    6   |");
+                            System.out.println("|   7    |   5.5  |");
+                            System.out.println("+--------+--------+");
                             System.out.println("Se encontraro el siguiente polinomio y las siguientes predicciones:");
                             regresion.polinomialCubica();
                             break;
                         case 4: // Regresion lineal multiple
                             System.out.printf("\n\nUtilizando el metodo de la regresion lineal multiple con los puntos:\n");
-                            System.out.println("""
-                                               +---------+---------+--------+
-                                               |   X2i   |   X2i   |   Yi   |
-                                               +---------+---------+--------+
-                                               |    0    |    0    |    5   |
-                                               |    2    |    1    |   10   |
-                                               |   2.5   |    2    |    9   |
-                                               |    1    |    3    |    0   |
-                                               |    4    |    6    |    3   |
-                                               |    7    |    2    |   27   |
-                                               +---------+---------+--------+
-                                               """);
+                            System.out.println("+---------+---------+--------+");
+                            System.out.println("|   X2i   |   X2i   |   Yi   |");
+                            System.out.println("+---------+---------+--------+");
+                            System.out.println("|    0    |    0    |    5   |");
+                            System.out.println("|    2    |    1    |   10   |");
+                            System.out.println("|   2.5   |    2    |    9   |");
+                            System.out.println("|    1    |    3    |    0   |");
+                            System.out.println("|    4    |    6    |    3   |");
+                            System.out.println("|    7    |    2    |   27   |");
+                            System.out.println("+---------+---------+--------+");
                             System.out.println("Se encontraron los siguientes coeficientes:");
                             regresion.linealMultiple();
                             break;
@@ -258,20 +242,18 @@ public class Main {
                     switch (m) {
                         case 1: // Interpolacion lineal
                             System.out.printf("\n\nUtilizando el metodo de la interpolacion lineal con la siguiente informacion:\n");
-                            System.out.println("""
-                                               +------------------+---------------------+------------------+
-                                               |   Diametro del   |   Longitud del      |  Peso por metro  |
-                                               |   alambre (mm)   |   kilogramo (m/kg)  |  lineal (g/m)    |
-                                               +------------------+---------------------+------------------+
-                                               |       0.50       |        649.35       |       1.540      |
-                                               |       0.55       |        536.65       |       1.863      |
-                                               |       0.60       |        450.94       |       2.218      |
-                                               |       0.65       |        384.23       |       2.603      |
-                                               |       0.70       |        331.30       |       3.018      |
-                                               |       0.75       |        288.60       |       3.465      |
-                                               |       0.80       |        253.65       |       3.942      |
-                                               +------------------+---------------------+------------------+
-                                               """);
+                            System.out.println("+------------------+---------------------+------------------+");
+                            System.out.println("|   Diametro del   |   Longitud del      |  Peso por metro  |");
+                            System.out.println("|   alambre (mm)   |   kilogramo (m/kg)  |  lineal (g/m)    |");
+                            System.out.println("+------------------+---------------------+------------------+");
+                            System.out.println("|       0.50       |        649.35       |       1.540      |");
+                            System.out.println("|       0.55       |        536.65       |       1.863      |");
+                            System.out.println("|       0.60       |        450.94       |       2.218      |");
+                            System.out.println("|       0.65       |        384.23       |       2.603      |");
+                            System.out.println("|       0.70       |        331.30       |       3.018      |");
+                            System.out.println("|       0.75       |        288.60       |       3.465      |");
+                            System.out.println("|       0.80       |        253.65       |       3.942      |");
+                            System.out.println("+------------------+---------------------+------------------+");
                             System.out.println("Se pidio lo siguiente:");
                             System.out.println("Obtener el peso por metro lineal en la longitud del kilogramo en 580");
                             System.out.println("\nY se obtubo el siguiente resultado:");
@@ -279,20 +261,18 @@ public class Main {
                             break;
                         case 2: // Interpolacion cuadratica
                             System.out.printf("\n\nUtilizando el metodo de la interpolacion cuadratica con la siguiente informacion:\n");
-                            System.out.println("""
-                                               +------------------+---------------------+------------------+
-                                               |   Diametro del   |   Longitud del      |  Peso por metro  |
-                                               |   alambre (mm)   |   kilogramo (m/kg)  |  lineal (g/m)    |
-                                               +------------------+---------------------+------------------+
-                                               |       0.50       |        649.35       |       1.540      |
-                                               |       0.55       |        536.65       |       1.863      |
-                                               |       0.60       |        450.94       |       2.218      |
-                                               |       0.65       |        384.23       |       2.603      |
-                                               |       0.70       |        331.30       |       3.018      |
-                                               |       0.75       |        288.60       |       3.465      |
-                                               |       0.80       |        253.65       |       3.942      |
-                                               +------------------+---------------------+------------------+
-                                               """);
+                            System.out.println("+------------------+---------------------+------------------+");
+                            System.out.println("|   Diametro del   |   Longitud del      |  Peso por metro  |");
+                            System.out.println("|   alambre (mm)   |   kilogramo (m/kg)  |  lineal (g/m)    |");
+                            System.out.println("+------------------+---------------------+------------------+");
+                            System.out.println("|       0.50       |        649.35       |       1.540      |");
+                            System.out.println("|       0.55       |        536.65       |       1.863      |");
+                            System.out.println("|       0.60       |        450.94       |       2.218      |");
+                            System.out.println("|       0.65       |        384.23       |       2.603      |");
+                            System.out.println("|       0.70       |        331.30       |       3.018      |");
+                            System.out.println("|       0.75       |        288.60       |       3.465      |");
+                            System.out.println("|       0.80       |        253.65       |       3.942      |");
+                            System.out.println("+------------------+---------------------+------------------+");
                             System.out.println("Se pidio lo siguiente:");
                             System.out.println("Obtener el peso por metro lineal a un diametro de 0.63");
                             System.out.println("\nY se obtubo el siguiente resultado:");
@@ -300,20 +280,18 @@ public class Main {
                             break;
                         case 3: // Interpolacion polinomica
                             System.out.printf("\n\nUtilizando el metodo de la interpolacion polinomica con la siguiente informacion:\n");
-                            System.out.println("""
-                                               +------------------+---------------------+------------------+
-                                               |   Diametro del   |   Longitud del      |  Peso por metro  |
-                                               |   alambre (mm)   |   kilogramo (m/kg)  |  lineal (g/m)    |
-                                               +------------------+---------------------+------------------+
-                                               |       0.50       |        649.35       |       1.540      |
-                                               |       0.55       |        536.65       |       1.863      |
-                                               |       0.60       |        450.94       |       2.218      |
-                                               |       0.65       |        384.23       |       2.603      |
-                                               |       0.70       |        331.30       |       3.018      |
-                                               |       0.75       |        288.60       |       3.465      |
-                                               |       0.80       |        253.65       |       3.942      |
-                                               +------------------+---------------------+------------------+
-                                               """);
+                            System.out.println("+------------------+---------------------+------------------+");
+                            System.out.println("|   Diametro del   |   Longitud del      |  Peso por metro  |");
+                            System.out.println("|   alambre (mm)   |   kilogramo (m/kg)  |  lineal (g/m)    |");
+                            System.out.println("+------------------+---------------------+------------------+");
+                            System.out.println("|       0.50       |        649.35       |       1.540      |");
+                            System.out.println("|       0.55       |        536.65       |       1.863      |");
+                            System.out.println("|       0.60       |        450.94       |       2.218      |");
+                            System.out.println("|       0.65       |        384.23       |       2.603      |");
+                            System.out.println("|       0.70       |        331.30       |       3.018      |");
+                            System.out.println("|       0.75       |        288.60       |       3.465      |");
+                            System.out.println("|       0.80       |        253.65       |       3.942      |");
+                            System.out.println("+------------------+---------------------+------------------+");
                             System.out.println("Se pidio lo siguiente:");
                             System.out.println("Obtener la longitud del kilometro a un peso por metro lineal (g/m) de 2.901");
                             System.out.println("\nY se obtubo el siguiente resultado:");

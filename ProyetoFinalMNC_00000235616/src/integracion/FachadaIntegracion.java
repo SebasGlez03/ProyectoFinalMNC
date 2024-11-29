@@ -11,6 +11,7 @@ package integracion;
 public class FachadaIntegracion implements IIntegracion {
 
     Rectangulo r = new Rectangulo();
+    Trapecio t = new Trapecio();
 
     /**
      * Metodo para obtener el valor de integracion con la regla del rectangulo
@@ -25,7 +26,7 @@ public class FachadaIntegracion implements IIntegracion {
      */
     @Override
     public void reglaTrapecio() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        t.reglaTrapecio();
     }
 
     /**
