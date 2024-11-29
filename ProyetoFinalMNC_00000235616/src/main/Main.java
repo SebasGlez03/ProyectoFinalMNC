@@ -4,6 +4,8 @@
  */
 package main;
 
+import integracion.FachadaIntegracion;
+import integracion.IIntegracion;
 import interpolacion.FachadaInterpolacion;
 import interpolacion.IInterpolacion;
 import java.util.Scanner;
@@ -25,6 +27,7 @@ public class Main {
     static ISistemas sistemas = new FachadaSistemas();
     static IRegresion regresion = new FachadaRegresion();
     static IInterpolacion interpolacion = new FachadaInterpolacion();
+    static IIntegracion integracion = new FachadaIntegracion();
 
     public static void main(String[] args) {
 
@@ -317,16 +320,28 @@ public class Main {
 
                     switch (m) {
                         case 1: // Regla del rectangulo
-                            System.out.println("-- AQUI VA EL METODO DE REGLA DEL RECTANGULO --");
+                            System.out.printf("\n\nUtilizando el metodo de la regla del rectangulo con la funcion f(x) = 10 + 2x - 6x^2 +5x^4,\n");
+                            System.out.println("y utilizando los limites inferior 0 y superior 2 con 10 subintervalos.");
+                            System.out.println("Se determino lo siguiente:");
+                            integracion.reglaRectangulo();
                             break;
                         case 2: // Regla del trapecio
-                            System.out.println("-- AQUI VA EL METODO DE REGLA DEL TRAPECIO --");
+                            System.out.printf("\n\nUtilizando el metodo de la regla del trapecio con la funcion f(x) = x^3 - 10x -5,\n");
+                            System.out.println("y utilizando los limites inferior 0 y superior 4 con 10 subintervalos.");
+                            System.out.println("Se determino lo siguiente:");
+                            integracion.reglaTrapecio();
                             break;
                         case 3: // Simpson 1/3
-                            System.out.println("-- AQUI VA EL METODO DE SIMPSON 1/3 --");
+                            System.out.printf("\n\nUtilizando el metodo de la regla de Simpson 1/3 con la funcion f(x) = x^3 - 6x^2 +11x -6.1,\n");
+                            System.out.println("y utilizando los limites inferior 0 y superior 4 con 10 subintervalos.");
+                            System.out.println("Se determino lo siguiente:");
+                            integracion.simpsonUnTercio();
                             break;
                         case 4: // Simpson 3/8
-                            System.out.println("-- AQUI VA EL METODO DE SIMPSON 3/8 --");
+                            System.out.printf("\n\nUtilizando el metodo de la regla de Simpson 3/8 con la funcion f(x) = x^3 - 6x^2 +11x -6.1,\n");
+                            System.out.println("y utilizando los limites inferior 0 y superior 4 con 10 subintervalos.");
+                            System.out.println("Se determino lo siguiente:");
+                            integracion.simpsonTresOctavos();
                             break;
                         default:
                             break;

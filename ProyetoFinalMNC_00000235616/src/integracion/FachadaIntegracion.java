@@ -13,6 +13,7 @@ public class FachadaIntegracion implements IIntegracion {
     Rectangulo r = new Rectangulo();
     Trapecio t = new Trapecio();
     SimpsonUnTercio s13 = new SimpsonUnTercio();
+    SimpsonTresOctavos s38 = new SimpsonTresOctavos();
 
     /**
      * Metodo para obtener el valor de integracion con la regla del rectangulo
@@ -43,7 +44,7 @@ public class FachadaIntegracion implements IIntegracion {
      */
     @Override
     public void simpsonTresOctavos() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        s38.simpsonTresOctavos();
     }
 
 }

@@ -22,6 +22,10 @@ public class Trapecio {
         return Math.pow(x, 3) - 10 * x - 5;
     }
 
+    /**
+     * Metodo que utiliza la regla del trapecio para resolver la funcion
+     * establecida por el profesor
+     */
     public void reglaTrapecio() {
         // Intervalo de integracion
         double a = 0; // Limite inferior

@@ -27,7 +27,7 @@ public class Prueba {
         System.out.println("-------------------------------------");
         i.simpsonUnTercio();
         System.out.println("-------------------------------------");
-//        i.simpsonTresOctavos();
+        i.simpsonTresOctavos();
 
     }
 
