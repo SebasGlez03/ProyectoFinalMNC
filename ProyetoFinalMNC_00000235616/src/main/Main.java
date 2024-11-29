@@ -7,6 +7,8 @@ package main;
 import java.util.Scanner;
 import raices_ecuaciones.FachadaRaices;
 import raices_ecuaciones.IRaices;
+import regresion.FachadaRegresion;
+import regresion.IRegresion;
 import sistemas_ecuaciones.FachadaSistemas;
 import sistemas_ecuaciones.ISistemas;
 
@@ -19,6 +21,7 @@ public class Main {
     static Scanner key = new Scanner(System.in);
     static IRaices raices = new FachadaRaices();
     static ISistemas sistemas = new FachadaSistemas();
+    static IRegresion regresion = new FachadaRegresion();
 
     public static void main(String[] args) {
 
@@ -163,16 +166,74 @@ public class Main {
 
                     switch (m) {
                         case 1: // Regresion lineal simple
-                            System.out.println("-- AQUI VA EL METODO DE REGRESION LINEAL SIMPLE --");
+                            System.out.printf("\n\nUtilizando el metodo de la regresion lineal simple con los puntos:\n");
+                            System.out.println("""
+                                               +--------+--------+
+                                               |   Xi   |   Yi   |
+                                               +--------+--------+
+                                               |  8.00  |  6.47  |
+                                               |  4.00  |  6.24  |
+                                               | -4.00  |  5.72  |
+                                               | -12.00 |  5.09  |
+                                               | -20.00 |  4.30  |
+                                               | -28.00 |  4.33  |
+                                               +--------+--------+
+                                               """);
+                            System.out.println("Se encontro la siguiente ecuacion de la recta y las siguientes predicciones:");
+                            regresion.linealSimple();
                             break;
                         case 2: // Regresion polinomial
-                            System.out.println("-- AQUI VA EL METODO DE REGRESION POLINOMIAL --");
+                            System.out.printf("\n\nUtilizando el metodo de la regresion polinomial con los puntos:\n");
+                            System.out.println("""
+                                               +--------+--------+
+                                               |   Xi   |   Yi   |
+                                               +--------+--------+
+                                               |   1    |   0.5  |
+                                               |   2    |   2.5  |
+                                               |   3    |    2   |
+                                               |   4    |    4   |
+                                               |   5    |  3.50  |
+                                               |   6    |    6   |
+                                               |   7    |   5.5  |
+                                               +--------+--------+
+                                               """);
+                            System.out.println("Se encontraro el siguiente polinomio y las siguientes predicciones:");
+                            regresion.polinomial();
                             break;
                         case 3: // Regresion polinomial cubica
-                            System.out.println("-- AQUI VA EL METODO DE REGRESION POLINOMIAL CUBICA --");
+                            System.out.printf("\n\nUtilizando el metodo de la regresion polinomial cubica con los puntos:\n");
+                            System.out.println("""
+                                               +--------+--------+
+                                               |   Xi   |   Yi   |
+                                               +--------+--------+
+                                               |   1    |   0.5  |
+                                               |   2    |   2.5  |
+                                               |   3    |    2   |
+                                               |   4    |    4   |
+                                               |   5    |  3.50  |
+                                               |   6    |    6   |
+                                               |   7    |   5.5  |
+                                               +--------+--------+
+                                               """);
+                            System.out.println("Se encontraro el siguiente polinomio y las siguientes predicciones:");
+                            regresion.polinomialCubica();
                             break;
                         case 4: // Regresion lineal multiple
-                            System.out.println("-- AQUI VA EL METODO DE REGRESION LINEAL MULTIPLE --");
+                            System.out.printf("\n\nUtilizando el metodo de la regresion lineal multiple con los puntos:\n");
+                            System.out.println("""
+                                               +---------+---------+--------+
+                                               |   X2i   |   X2i   |   Yi   |
+                                               +---------+---------+--------+
+                                               |    0    |    0    |    5   |
+                                               |    2    |    1    |   10   |
+                                               |   2.5   |    2    |    9   |
+                                               |    1    |    3    |    0   |
+                                               |    4    |    6    |    3   |
+                                               |    7    |    2    |   27   |
+                                               +---------+---------+--------+
+                                               """);
+                            System.out.println("Se encontraron los siguientes coeficientes:");
+                            regresion.linealMultiple();
                             break;
                         default:
                             break;

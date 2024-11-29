@@ -4,8 +4,8 @@
  */
 package main;
 
-import sistemas_ecuaciones.FachadaSistemas;
-import sistemas_ecuaciones.ISistemas;
+import regresion.FachadaRegresion;
+import regresion.IRegresion;
 
 /**
  *
@@ -15,15 +15,15 @@ public class Prueba {
 
     public static void main(String[] args) {
 
-        ISistemas s = new FachadaSistemas();
+        IRegresion r = new FachadaRegresion();
 
-        s.eliminacionGauss();
+        r.linealSimple();
         System.out.println("-------------------------------------");
-        s.gaussJordan();
+        r.polinomial();
         System.out.println("-------------------------------------");
-        s.gaussSeidel();
+        r.polinomialCubica();
         System.out.println("-------------------------------------");
-        s.matrizInversa();
+        r.linealMultiple();
 
     }
 
